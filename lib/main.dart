@@ -125,10 +125,10 @@ class _PageState extends State<Page> with SingleTickerProviderStateMixin {
                   },
                 ),
                 Container(
-                  transform: Matrix4.translationValues(0.0, -140.0, 0.0),
+                  transform: Matrix4.translationValues(0.0, -180.0, 0.0),
                   child: Image.asset(
                     'assets/car1.png',
-                    height: 200,
+                    height: 140,
                   ),
                 ),
               ],
@@ -230,16 +230,22 @@ class _PageState extends State<Page> with SingleTickerProviderStateMixin {
                         onVerticalDragStart: _acelerar,
                         onVerticalDragEnd: _soltarAcelerador,
                         child: Container(
-                          height: 80.0,
-                          width: 50.0,
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
+                            'assets/acelerador.png',
+                            height: 100,
                           ),
                         ),
+                        // Container(
+                        //   height: 80.0,
+                        //   width: 50.0,
+                        //   decoration: BoxDecoration(
+                        //     color: Colors.black,
+                        //     borderRadius: BorderRadius.circular(20),
+                        //   ),
+                        // ),
                       ),
-                      Divider(),
-                      Text('Acelerame')
+                      // Divider(),
+                      // Text('Acelerame')
                     ],
                   ),
                 ],
